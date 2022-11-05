@@ -1,0 +1,76 @@
+.col {
+    transition: all 0.1s;
+    display: flex;
+    flex: 1 1;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+    }
+    button {
+        outline: none;
+        border: none;
+        background: transparent;
+        font-size: 1.5rem;
+        color: inherit;
+        padding: 10px;
+        border-radius: 10px;
+        transition: background 0.3s;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+    }
+    .lock {
+        width: 50px;
+        height: 50px;
+        margin-left: 1em;
+        @media screen and (min-width: 768px) {
+            margin: 0;
+        }
+    }
+}
+.codeBlockContent {
+    margin: 0 auto;
+    border-radius: 8px;
+    .copyButton {
+        font: inherit;
+        transition: transform 0.3s;
+        &:active {
+            transform: translateX(-2px);
+        }
+    }
+
+    .codeBlockLine {
+        cursor: pointer;
+        font: inherit;
+        min-width: 100%;
+        transition: background 0.3s;
+    }
+    .codeTextLine {
+        padding: 0.4em;;
+    }
+}
+
+.light {
+    &.col {
+        color: white;
+    }
+    .codeBlockContent {
+        background: rgba(0, 0, 0, 0.1);
+    }
+}
+.dark {
+    &.col {
+        color: black;
+    }
+    .codeBlockContent {
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
+
+
