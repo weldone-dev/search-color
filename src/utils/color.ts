@@ -3,9 +3,8 @@ import {countCol} from "../env";
 function validateHexColor(colorHex: string | undefined): boolean {
 		if (!colorHex) return false
 		const hex = removeHash(colorHex)
-		const hexInt = parseInt(hex, 16)
-		if (isNaN(hexInt)) return false
-		return (hex.length === 3 && !!(hexInt >> 8)) || (hex.length === 6 && !!(hexInt >> 20))
+		if (isNaN(parseInt(hex, 16))) return false
+		return hex.length === 3 || hex.length === 6
 }
 
 function convertHexInRGB(colorHex: string): number[] {
