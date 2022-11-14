@@ -13,6 +13,7 @@ This project is an application that makes it easy for a designer to find a color
 - TypeScript
 - Vite (React) 
 - Sass
+- Container (Github Action, Docker) 
 
 ## Running Project Locally
 ### Used npm 
@@ -24,6 +25,16 @@ npm run start
 ```bash
 yarn
 yarn start
+```
+
+## Running Project in Container
+### Used docker
+```bash
+sudo docker run  -p 8080:80 $(sudo docker build  . -q)
+```
+### Used 
+```bash
+podman run  -p 8080:80 $(podman build  . -q)
 ```
 
 ![](https://github.com/weldone-dev/search-color/blob/main/demo.gif?raw=true)
