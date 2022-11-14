@@ -14,6 +14,7 @@ This project is an application that makes it easy for a designer to find a color
 - Vite (React) 
 - Sass
 - Container (Github Action, Docker) 
+- PWA
 
 ## Running Project Locally
 ### Used npm 
