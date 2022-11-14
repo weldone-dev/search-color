@@ -1,5 +1,4 @@
-import {countCol} from "../env";
-
+export const countCol = 5
 function validateHexColor(colorHex: string | undefined): boolean {
 		if (!colorHex) return false
 		const hex = removeHash(colorHex)

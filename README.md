@@ -11,7 +11,7 @@ This project is an application that makes it easy for a designer to find a color
 
 ## Tools used
 - TypeScript
-- React
+- Vite (React) 
 - Sass
 
 ## Running Project Locally

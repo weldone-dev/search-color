@@ -1,1 +1,0 @@
-export const countCol = parseInt(process.env.REACT_APP_COLCOUNT || "5", 10)

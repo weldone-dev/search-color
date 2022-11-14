@@ -1,7 +1,13 @@
 import React, {useEffect} from "react";
 import {useNavigate, useParams} from "react-router-dom";
-import {generateColorForURL, generateRandomColor, isInCorrectnessCheck, parseColorFromParam} from "../../utils";
-import {countCol} from "../../env";
+import {
+	countCol,
+	generateColorForURL,
+	generateRandomColor,
+	isInCorrectnessCheck,
+	parseColorFromParam
+} from "../../utils";
+
 import styles from "./App.module.scss";
 import ControlButton from "../ControlButton/ControlButton";
 import ColumnBlock from "../ColumnBlock/ColumnBlock";
