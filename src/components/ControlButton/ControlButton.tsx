@@ -14,8 +14,7 @@ const handleShareClick = async () => {
             text: 'Take a look at this color!',
             url: window.location.href,
         })
-    }
-    else {
+    } else {
         await copyToClickBoard(window.location.href)
     }
 }

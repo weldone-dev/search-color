@@ -22,11 +22,13 @@ const ColumnBlock: React.FC<Props> = ({index, isLock, color, onClickLock}) => {
                 <code className={styles.codeBlockLine}>
                     <span className={styles.codeTextLine}>{addHash(color)}</span>
                 </code>
-                <button type="button" aria-label={"copy"} onClick={() => copyToClickBoard(addHash(color))} className={styles.copyButton}>
+                <button type="button" aria-label={"copy"} onClick={() => copyToClickBoard(addHash(color))}
+                        className={styles.copyButton}>
                     <FontAwesomeIcon icon={["fas", "copy"]}/>
                 </button>
             </div>
-            <button aria-label={isLock ? 'lock' : 'open'} onClick={() => onClickLock(index, !isLock)} className={styles.lock}>
+            <button aria-label={isLock ? 'lock' : 'open'} onClick={() => onClickLock(index, !isLock)}
+                    className={styles.lock}>
                 <FontAwesomeIcon icon={["fas", isLock ? 'lock' : 'lock-open']}/>
             </button>
         </div>

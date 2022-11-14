@@ -5,6 +5,7 @@
   right: 0;
   margin: 0.4em;
 }
+
 .reload, .share {
   border-radius: 10px;
   padding: 0.2em;
@@ -14,12 +15,15 @@
   border: none;
   outline: none;
 }
-.reload:active svg{
+
+.reload:active svg {
   transition: transform 0.25s ease-in-out;
   transform: rotateZ(180deg);
 }
-.share{
+
+.share {
   margin-left: 0.2em;
+
   &:active svg {
     transition: transform 0.25s ease-in-out;
     transform: translateX(-2px);
