@@ -2,8 +2,15 @@ name: Build & deploy
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - main
+    paths-ignore:
+      - 'demo.gif'
+      - 'README.md'
+      - 'Dockerfile'
+      - '.dockerignore'
+
+
 
 jobs:
   build:
